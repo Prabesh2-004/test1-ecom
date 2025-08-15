@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 const Signin = () => {
+    const navigate = useNavigate();
+    function sendtohome(){
+        navigate('/home')
+    }
   return (
     <div class="flex min-h-[100vh - 50px] flex-col justify-center bg-black px-6 py-12 lg:px-8">
       <div class="sm:mx-auto text-white sm:w-full sm:max-w-sm">
@@ -67,6 +72,7 @@ const Signin = () => {
           <div>
             <button
               type="submit"
+              onClick={sendtohome}
               class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Sign in

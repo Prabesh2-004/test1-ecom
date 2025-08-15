@@ -10,8 +10,8 @@ const App = () => {
     <div className="bg-black h-auto">
     <Layout>
         <Routes>
-          <Route path="/signin" element={<Signin />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Signin />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
     </Layout>
