@@ -3,3 +3,22 @@
 input:focus{
     outline: none;
 }
+
+@media screen and (width < 1200px){
+   #video-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 equal columns */
+        gap: 1rem; /* optional spacing */
+    }
+}
+@media screen and (width < 700px){
+    #video-grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (width < 600px){
+    #sidebar{
+        display: none;
+    }
+}

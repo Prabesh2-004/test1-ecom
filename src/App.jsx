@@ -3,14 +3,14 @@ import { Route, Routes } from "react-router";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import Layout from "./Components/Layout";
-import Signin from "./Pages/signin";
+// import Signin from "./Pages/signin";
 
 const App = () => {
   return (
-    <div className="bg-black h-auto">
+    <div>
     <Layout>
         <Routes>
-          <Route path="/" element={<Signin />} />
+          {/* <Route path="/" element={<Signin />} /> */}
           <Route path="/home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

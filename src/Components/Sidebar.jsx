@@ -12,7 +12,7 @@ export default function Sidebar({ isOpen = true}) {
   ];
 
   return (
-    <aside
+    <aside id='sidebar'
       className={`transition-all duration-300 ${
         isOpen ? "w-64" : "w-20"
       } bg-white border-r h-[calc(100vh-64px)] sticky top-16`}
